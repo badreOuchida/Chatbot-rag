@@ -10,12 +10,14 @@ except ImportError:
 st.set_page_config(page_title="Chat with CV docs, powered by LlamaIndex", page_icon="🦙", layout="centered", initial_sidebar_state="auto", menu_items=None)
 #openai.api_key = st.secrets.openai_key
 openai.api_key = st.secrets["openai_key"]["key"]
-col1, col2, col3 = st.columns([1, 1.5, 1])
+col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     st.image("Logo_inpt.PNG", width=150)
+with col2:
+    st.image("gemini.png", width=150)
 with col3:
     st.image("llamaindex_logo.png", width=180)
-st.title("Chatbot utilisant RAG et LLM pour le code de travail Marocain en Python avec LlamaIndex et Streamlit.")
+st.title("Chatbot utilisant RAG et LLM pour le code de travail Marocain en Python avec LlamaIndex, Gemini et Streamlit.")
 st.info("Projet réalisé par Taqi Anas et Ouchida Badreddine", icon="📃")
          
 if "messages" not in st.session_state.keys(): # Initialize the chat messages history
