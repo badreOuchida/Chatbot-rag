@@ -13,7 +13,7 @@ st.set_page_config(page_title="Chat with CV docs, powered by LlamaIndex", page_i
 #openai.api_key = st.secrets.openai_key
 col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
-    st.image("Logo_inpt.png", width=150)
+    st.image("Logo_inpt.PNG", width=150)
 with col2:
     st.image("gemini.png", width=150)
 with col3:
